@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 200px;
+}
+
+.title-group, i {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+img {
+    max-height: 32px;
+}
