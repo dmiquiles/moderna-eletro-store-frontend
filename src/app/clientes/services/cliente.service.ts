@@ -14,12 +14,12 @@ export class ClienteService {
     private http: HttpClient
   ) { }
 
-  listar(): Observable<Cliente> {
-    return this.http.get<Cliente>(this.url);
+  listar(): Observable<Cliente[]> {
+    return this.http.get<Cliente[]>(this.url);
   }
 
-  listarPorId(id: number): Observable<Cliente[]> {
-    return this.http.get<Cliente[]>(`${this.url}/${id}`)
+  listarPorId(id: number): Observable<Cliente> {
+    return this.http.get<Cliente>(`${this.url}/${id}`)
   }
 
   criar(cliente: Cliente) {
@@ -31,7 +31,7 @@ export class ClienteService {
   }
 
   deletar(id: number) {
-    return this.http.delete(`${this.url}/deletar/${id}`);
+    return this.http.delete(`${this.url}/${id}`);
   }
 
 
