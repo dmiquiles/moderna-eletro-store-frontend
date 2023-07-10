@@ -6,13 +6,15 @@ import { ClientesReadComponent } from './components/clientes-read/clientes-read.
 import { ClientesUpdateComponent } from './components/clientes-update/clientes-update.component';
 import { ClientesCreateComponent } from './components/clientes-create/clientes-create.component';
 import { ClienteRoutingModule } from "./cliente-routing.module";
+import { ClientesFormComponent } from './components/clientes-form/clientes-form.component';
 
 @NgModule({
     declarations: [
     ClientesComponent,
     ClientesReadComponent,
     ClientesUpdateComponent,
-    ClientesCreateComponent
+    ClientesCreateComponent,
+    ClientesFormComponent
   ],
     imports: [
       CommonModule,
